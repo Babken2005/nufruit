@@ -1,6 +1,6 @@
 .targetsBlock {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .targetsParent {
   justify-content: center;
@@ -23,6 +23,7 @@
 }
 .targetsParentRight {
   max-width: 400px;
+  margin-bottom: 25px;
 }
 .targetsParentRight h1 {
   font-weight: 500;
@@ -61,8 +62,33 @@
   letter-spacing: -0.01em;
   color: #130f49;
 }
-@media (max-width:920px) {
+@media (max-width: 920px) {
   .targetsBlock {
-    display: none;
+    display: block;
+  }
+  .targetsParent {
+    display: block;
+  }
+  .targetsParentRight {
+    position: relative;
+    max-width: 95%;
+    left: 5%;
+  }
+  .targetsParentRight h1 {
+    font-size: 3em;
+  }
+  .targetsContent {
+    font-size: 1em;
+  }
+  .targetsParentLeft {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 310px;
+    height: 310px;
+    margin-bottom: 25px;
+  }
+  .targetsParentLeft img {
+    width: 168px;
   }
 }
