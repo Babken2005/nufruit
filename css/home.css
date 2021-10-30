@@ -1,128 +1,162 @@
-.home {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  background-color: white;
-  overflow: hidden;
-}
-.homeRight {
-  height: 95vh;
-  position: absolute;
-  right: 0;
-}
-.homeRightGirl {
-  width: 52.5%;
-  position: absolute;
-  right: 0;
-}
-.nameTxt {
-  position: absolute;
-  top: 4.5vh;
-  left: 3%;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: -0.05em;
-  color: #000000;
-  z-index: 150;
-}
-.homeTopLeftCard {
-  position: absolute;
-  width: 158px;
-  height: 61px;
-  justify-content: center;
-  border: 1px solid #e6e6e6;
-  box-sizing: border-box;
-  border-radius: 16px;
-  left: 20%;
-  top: 3vh;
-}
-.homeTopLeftCard p {
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: -0.05em;
-  color: #0b0736;
-  margin-left: 15px;
-}
-.sph {
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-  background: #0b0736;
-  margin: 2.5px;
-}
-.homeCard {
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(50%);
-  left: 20%;
-  z-index: 150;
-}
-.homeCard h1 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 90px;
-  line-height: 85px;
-  letter-spacing: -0.02em;
-  color: #130f49;
-  margin-bottom: 20px;
-}
-.trackingTxt {
-  font-weight: normal;
-  font-size: 1.2em;
-  letter-spacing: -0.01em;
-  color: #0b0736;
-  margin-right: 5px;
-}
-.homeCardTxtBlock {
-  margin-bottom: 15px;
-}
-.startBtn p {
-  font-weight: 500;
-  font-size: 1.05em;
-  letter-spacing: -0.05em;
-  color: #ffffff;
-  z-index: 150;
-}
-.startBtn {
-  transition: background 0.2s linear;
-  width: 165px;
-  height: 69px;
-  background: #130f49;
-  border-radius: 20px;
-  border: 1px solid #130f49;
-}
-.startBtn:hover {
-  background: white;
-}
-.startBtn:hover .startBtnTxt {
-  color: #130f49;
-}
-.underline {
-  border-bottom: 1px solid #FFD32C;
-}
-@media (max-width:920px) {
-  .homeRight {
-    width: 95%;
-    height: unset;
-  }
-  .homeRightGirl {
-    width: 75%;
-  }
-  .homeCard {
-    left: 5%;
-  }
-  .homeCard h1 {
-    font-size: 3.2em;
-    line-height: unset;
-  }
-  .nameTxt {
-    top:10px;
-    left: 5%;
-    font-size: 1.2em;
-  }
-  .homeTopLeftCard {
-    display: none;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Nufruit | Landing Page</title>
+</head>
+<body>
+  <div class="home">
+      <h4 class="nameTxt">nufruit</h4>
+      <div class="homeTopLeftCard c-p a-c j-c">
+          <div class="spheresBlock">
+            <div class="sphereLine-1 a-c">
+              <div class="sph"></div>
+              <div class="sph"></div>
+            </div>
+            <div class="sphereLine-2 a-c">
+              <div class="sph"></div>
+              <div class="sph"></div>
+            </div>
+          </div>
+        <p>Our app</p>
+      </div>
+    <div class="homeCard">
+      <h1>Life <br> Changing <br> weight loss.</h1>
+      <div class="homeCardTxtBlock a-c">
+        <p class="trackingTxt">Tracking made <span class="underline">easy</span></p>
+        <img src="./images/banana.png" alt="banana">
+      </div>
+      <div class="startBtn c-p a-c j-c">
+        <p class="startBtnTxt">Start now</p>
+      </div>
+    </div>
+    <img class="homeRight" src="./images/png-1.png" alt="png-1">
+    <img class="homeRightGirl" src="./images/girl.png" alt="girl">
+  </div>
+  <div class="targetsBlock a-c j-c">
+    <div class="targetsParent a-c">
+      <div class="targetsParentLeft">
+        <img src="./images/targetsLeftImg.png" alt="phone">
+      </div>
+      <div class="targetsParentRight">
+        <h1>Set your own targets.</h1>
+        <p class="targetsContent">Our Well Balanced goal is the one we recommend for most people
+        . However, if you have specific dietary requirements.</p>
+        <div class="appStoreGetBtn c-p a-c ">
+            <img src="./images/apple.png" alt="">
+          <div class="appStoreGetBtnContent">
+            <p>Get on the</p>
+            <h4>App Store</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="trackBlock">    
+    <img class="trackSphere" src="./images/png-2.png" alt="png-2">
+    <div class="trackBlockTop a-c">
+      <h1>Track<br>
+        anywhere,<br>
+        anytime.</h1>
+        <h2>Over 250,000 foods with photos. Plus barcode scanning App.</h2>
+    </div>
+    <div class="trackBlockBottom a-c">
+      <div class="cardsParent a-c">
+        <div class="CardsParentLeft">
+          <div class="productCard a-c j-c">
+            <div class="productCardParent">
+              <img src="./images/bananaCard.png" alt="1">
+              <h4 class="cardTitle">Bannana</h4>
+              <p class="cardContent">Without skin</p>
+            </div>
+          </div>
+          <div class="productCard a-c j-c">
+            <div class="productCardParent">
+              <img src="./images/tacoCard.png" alt="1">
+              <h4 class="cardTitle">Taco 5 Ripe</h4>
+              <p class="cardContent">Ready Bananas</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardsParentRight">
+          <div class="productCard a-c j-c">
+            <div class="productCardParent">
+              <img src="./images/bananaCard.png" alt="1">
+              <h4 class="cardTitle">Banana Bread</h4>
+              <p class="cardContent">Backing Mix</p>
+            </div>
+          </div>
+          <div class="productCard a-c j-c">
+            <div class="productCardParent">
+              <center><img src="./images/mildCard.png" alt="1"></center>
+              <h4 class="cardTitle">Flavour Mild</h4>
+              <p class="cardContent">Plant based</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trackBlockContext">
+        <div class="contextCard a-c">
+          <div class="cardSphere a-c j-c">
+            <img src="./images/spheredreg.png" alt="1"><img src="./images/5.png" alt="1">
+          </div>
+          <div class="contextCardContent">
+            <h4>Our Well Balanced</h4>
+            <p>Goal is the one we recommend for most people. However, if you have specific dietary requirements.</p>
+          </div>
+        </div>
+        <div class="contextCard a-c">
+          <div class="cardSphere a-c j-c">
+            <img src="./images/spheredreg2.png" alt="1"><img src="./images/6.png" alt="1">
+          </div>
+          <div class="contextCardContent">
+            <h4>Barcode Scanner</h4>
+          <p>App on your phone or tablet. Or keep a food diary online via the website – whichever suits you best.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="caloriesBlock a-c j-c">
+    <div class="caloriesBlockLeft">
+      <div class="targetsParentRight">
+        <h1>Calories tracking.</h1>
+        <p class="targetsContent">Our Well Balanced goal is the one we recommend for most people.
+        However, if you have specific dietary requirements.</p>
+        <div class="appStoreGetBtn c-p a-c ">
+            <img src="./images/apple.png" alt="">
+          <div class="appStoreGetBtnContent">
+            <p>Get on the</p>
+            <h4>App Store</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="caloriesBlockRight">
+      <img src="./images/caloriesRightImg.png" alt="img">
+    </div>
+  </div>
+  <center>
+    <img class="companiesImg" src="./images/companies.png" alt="1">
+  </center>
+  <div class="trialBlock a-c j-c">
+    <div class="trialBlockParent">
+      <div class="trialCard">
+        <h1>Join free<br> 
+          for 7 days</h1>
+          <div class="trialBtn c-p a-c j-c">
+            <div class="btnLeft"><img src="./images/apple-w.png" alt="apple"></div>
+            <div class="btnRight">
+              <p>Get on the</p>
+              <h4>App Store</h4>
+            </div>
+          </div>
+      </div>
+      <img src="./images/trialImg.png" class="trialImg" alt="trial">
+    </div>
+  </div>
+</body>
+</html>
