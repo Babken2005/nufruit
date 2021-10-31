@@ -128,7 +128,7 @@
     margin-top: 50px;
   }
   .cardSphere img {
-    margin-bottom: 50px;
+    transform: translateY(-25px);
   }
   .contextCardContent p {
     font-size: 1.1em;
