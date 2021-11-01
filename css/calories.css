@@ -1,0 +1,52 @@
+.caloriesBlock {
+  width: 100%;
+  height: 100vh;
+}
+.caloriesBlockRight {
+  position: relative;
+  width: 501px;
+  height: 501px;
+  border-radius: 100%;
+  background-color: #fee5c1;
+  overflow: hidden;
+  margin-left: 100px;
+}
+.caloriesBlockRight img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.caloriesBlockMobile {
+  display: none;
+}
+@media (max-width:920px) {
+  .caloriesBlock {
+    display: none;
+    min-height: 100vh;
+    height: unset;
+  }
+  .caloriesBlockMobile {
+    display: block;
+  }
+  .companiesImg {
+    display: none;
+  }
+  .caloriesBlockLeft {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .caloriesBlockRight {
+    width: 310px;
+    height: 310px;
+    margin-left: unset;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .caloriesBlockRight img {
+    width: 168px;
+  }
+}

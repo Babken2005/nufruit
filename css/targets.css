@@ -1,0 +1,94 @@
+.targetsBlock {
+  width: 100%;
+  min-height: 100vh;
+}
+.targetsParent {
+  justify-content: center;
+}
+.targetsParentLeft {
+  width: 500px;
+  height: 500px;
+  background: #fecfd0;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 100px;
+}
+.targetsParentLeft img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.targetsParentRight {
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+.targetsParentRight h1 {
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  color: #130f49;
+}
+.targetsContent {
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 35px;
+  letter-spacing: -0.01em;
+  color: #130f49;
+  opacity: 0.4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.appStoreGetBtn {
+  justify-content: space-evenly;
+  width: 186px;
+  height: 76px;
+  background: #cce8fd;
+  border-radius: 20px;
+}
+.appStoreGetBtn p {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #130f49;
+  opacity: 0.4;
+}
+.appStoreGetBtn h4 {
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  color: #130f49;
+}
+@media (max-width: 920px) {
+  .targetsBlock {
+    display: block;
+  }
+  .targetsParent {
+    display: block;
+  }
+  .targetsParentRight {
+    position: relative;
+    max-width: 95%;
+    left: 5%;
+  }
+  .targetsParentRight h1 {
+    font-size: 3em;
+  }
+  .targetsContent {
+    font-size: 1em;
+  }
+  .targetsParentLeft {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 310px;
+    height: 310px;
+    margin-bottom: 25px;
+  }
+  .targetsParentLeft img {
+    width: 168px;
+  }
+}
