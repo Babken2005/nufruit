@@ -65,6 +65,7 @@
 @media (max-width: 920px) {
   .targetsBlock {
     display: block;
+    min-height: unset;
   }
   .targetsParent {
     display: block;
