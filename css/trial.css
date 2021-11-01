@@ -71,6 +71,7 @@
     font-size: 3.2em;
   }
   .trialImg {
+    transform: translateY(5px);
     width: 70%;
     position: relative;
     left: 5%;
