@@ -24,8 +24,9 @@
 @media (max-width:920px) {
   .caloriesBlock {
     display: none;
-    min-height: 100vh;
+    min-height: unset;
     height: unset;
+    margin-top: 50px;
   }
   .caloriesBlockMobile {
     display: block;
